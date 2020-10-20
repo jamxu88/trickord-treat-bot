@@ -9,10 +9,13 @@ client.on('message', (message) => {
           for(var i = 0; i < message.embeds.length; i++) {
               if(message.embeds[i].description.includes("h!trick")) {
                   message.channel.send("h!trick")
+                  console.log("Sniped.")
                   break;
               }else
               if (message.embeds[i].description.includes("h!treat")) {
                   message.channel.send("h!treat")
+                  console.log("Sniped.")
+                  break;
               }
           }
       }
