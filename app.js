@@ -8,12 +8,12 @@ client.on('message', (message) => {
     if (message.author.id == 755580145078632508) { 
         for(var i = 0; i < message.embeds.length; i++) {
             if(message.embeds[i].description.includes("h!trick")) {
-                message.channel.send("h!trick")
+                setTimeout(message.channel.send("h!trick"),10)
                 console.log("Sniped.")
                 break;
             }else
             if (message.embeds[i].description.includes("h!treat")) {
-                message.channel.send("h!treat")
+                setTimeout(message.channel.send("h!treat"),10)
                 console.log("Sniped.")
                 break;
             }
